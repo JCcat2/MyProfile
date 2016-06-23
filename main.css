@@ -1,3 +1,7 @@
+/*
+440
+*/
+
 html, body, h1, h2, h3, h4, p, div, ul, li, ol {
     margin: 0;
     padding: 0;
@@ -5,12 +9,19 @@ html, body, h1, h2, h3, h4, p, div, ul, li, ol {
     font-size: 100%;
     border: 0;
 }
+.site {
+    width: 100%;
+    margin: 0 auto;
+}
 h1 {
-    font-size: 60px;
+    font-size: 3.75em;
     font-weight: bold;
     text-align: center;
     font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
-    padding: 50px;
+    padding: 50px 0;
+    width: 20%;
+    margin: 0 auto;
+    
 }
 
 h2 {
@@ -19,21 +30,18 @@ h2 {
     font-weight: 100;
     text-align: center;
     color: #ffffff;
-    width: 500px;
+    width: 35.637918745%;
     margin: 0 auto;
     
 }
 
-h2 strong {
-    font-weight: 600;
-}
 h3 {
     font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
     font-size: 30px;
     font-weight: normal;
     margin: 20px 0 10px 0;
     border-bottom: 2px solid #999999;
-    width: 450px;
+    width: 31.361368496%px;
     padding-bottom: 2px;
 }
 
@@ -46,7 +54,7 @@ h4 {
     margin: 1px auto 3px auto;
     padding-bottom: 1px;
     text-align: center;
-    width: 400px;
+    width:  90.909090909%;
 }
 p {
     font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
@@ -84,9 +92,8 @@ p {
 }
 
 
-
 .projects, .schoolastic, .skills, .courses {
-     width: 440px;
+     width: 31.361368496%;
      margin: 0 auto;
 }
 
@@ -95,6 +102,7 @@ p {
     text-indent: -10px;
     width: 420px;
     margin-left: 15px;
+    width: 100%;
 }
 
 .paragraph, .images, .skills ul {
@@ -113,13 +121,18 @@ p {
     width: 200px;
 }
 .images img {
-    width: 70px;
-    height: 70px;
+    width: 15.909090909%;
+    height: 38.04347826%;
     float: left;
     margin-right: 10px;
 }
 .images li {
     margin-top: 20px;
+    width: 100%;
+}
+
+.MusicMore {
+    width: 100%;
 }
 
 .schoolastic li {
@@ -132,6 +145,7 @@ p {
     margin-right: 10px;
     font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman';
     color: #a99933;
+    width: 100%;
 }
 
 .s {
@@ -142,7 +156,7 @@ p {
 }
 
 .cs {
-    width: 420px;
+    width: 100%;
     margin: 0 auto; 
     padding: 10px;
 }
@@ -166,5 +180,35 @@ p {
     text-decoration: underline;
     color: #553333;
     font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman';
+}
+        
+@media only screen and (max-width: 1090px) {
+    .right,
+    .left {
+        display: none;
+    }
+    h1 {
+        width: 30%;
+    }
+    h2 {
+        width: 50%;
+    }
+    .projects, .schoolastic, .skills, .courses {
+        width: 50%;
+    }
+
+}
+@media only screen and (max-width: 741px) {
+    h2 {
+        width: 70%;
+    }
+     .projects, .schoolastic, .skills, .courses {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 488px) {
+    .projects, .schoolastic, .skills, .courses {
+        width: 85%;
+    }
 }
         
